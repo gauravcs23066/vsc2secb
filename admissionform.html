@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<body>
+    <h1>Admission Form</h1>
+    <form>
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+            <label>Full name:</label>
+            <input type="text" name="fname" placeholder="Enter name"><br><br>
+            <label>Mother's name:</label>
+            <input type="text" name="fname" placeholder="Enter Mother's name"><br><br>
+            <label>Date of birth:</label>
+            <input type="date"><br><br>
+            <label>Gender:</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Transgender<br><br>
+            <label>Category:</label>
+            <input type="radio" name="category">Open
+            <input type="radio" name="category">OBC
+            <input type="radio" name="category">SC
+            <input type="radio" name="category">ST<br>
+            <label>Upload Caste Certificate(if eligible):</label>
+            <input type="file"><br><br>
+            <label>Address:</label>
+            <input type="text">
+            <label>Upload Address Proof:</label>
+            <input type="file"><br><br>
+            <label>Annual income:</label>
+            <input type="number">
+            <label>Upload income Certificate:</label>
+            <input type="file"><br><br>
+            <label>Contact no.:</label>
+            <input type="number" name="contact" maxlength="10" placeholder="Enter number"><br><br>
+            <label>E-mail:</label>
+            <input type="email" placeholder="Enter mail id"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Academic Details</b></legend>
+            <fieldset>
+                <legend>10th grade details</legend>
+                <label>Select board of education:</label>
+                <select name="board">
+                    <option value="0" selected disabled>--Select Board--</option>
+                    <option value="1">State Board</option>
+                    <option value="2">CBSE</option>
+                    <option value="3">ICSE</option>
+                </select><br><br>
+                <label>Roll no.</label>
+                <input type="number"><br><br>
+                <label>Marks scored:</label>
+                <input type="number"><br><br>
+                <label>Upload Marksheet:</label>
+                <input type="file"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>12th grade details</legend>
+                <label>Select board of education:</label>
+                <select name="board1">
+                    <option value="0" selected disabled>--Select Board--</option>
+                    <option value="1">State Board</option>
+                    <option value="2">CBSE</option>
+                    <option value="3">ICSE</option>
+                </select><br><br>
+                <label>Roll no.</label>
+                <input type="number"><br><br>
+                <label>Marks scored:</label>
+                <input type="number"><br><br>
+                <label>Upload Marksheet:</label>
+                <input type="file"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>JEE/CET details</legend>
+                <label>Seat no.:</label>
+                <input type="number"><br><br>
+                <label>Percentile scored:</label>
+                <input type="number"><br><br>
+                <label>Upload scorecard:</label>
+                <input type="file"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Course details</legend>
+                <label>Select all the branches you are interested in:<br><br></label>
+                <input type="checkbox" name="cs">B.Tech Computer Science<br><br>
+                <input type="checkbox" name="ai">B.Tech Artificial Intelligence<br><br>
+                <input type="checkbox" name="ml">B.Tech Machine Learning<br><br>
+                <input type="checkbox" name="ds">B.Tech Data Science<br><br>
+                <input type="checkbox" name="ee">B.Tech Electrical Engineering<br><br>
+                <input type="checkbox" name="ce">B.Tech Civil Engineering<br><br>
+                <input type="checkbox" name="me">B.Tech Mechanical Engineering<br><br>
+                <label>Select first priority branch:</label>
+                <select name="branch">
+                    <option value="0" selected disabled>--Select branch--</option>
+                    <option value="cs">B.Tech Computer Science</option>
+                    <option value="ai">B.Tech Artificial Intelligence</option>
+                    <option value="ml">B.Tech Machine Learning</option>
+                    <option value="ds">B.Tech Data Science</option>
+                    <option value="ee">B.Tech Electrical Engineering</option>
+                    <option value="ce">B.Tech Civil Engineering</option>
+                    <option value="me">B.Tech Mechanical Engineering</option>
+                </select>
+            </fieldset>
+            <input type="button" value="SUBMIT">
+            <input type="button" value="CLEAR ALL">
+            <input type="button" value="CLOSE">
+            <p style="text-align: right;">Created by Gaurav Gurharikar</p>
+        </fieldset>
+    </form>
+</body>
+</html>
